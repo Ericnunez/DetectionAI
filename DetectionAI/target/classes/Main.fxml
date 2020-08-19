@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nunezeric.controllers.MainController">
+    <center>
+        <ImageView fx:id="currentFrame" fitHeight="450.0" fitWidth="550.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+        </ImageView>
+    </center>
+    <right>
+        <VBox alignment="BASELINE_LEFT" prefHeight="343.0" prefWidth="211.0" spacing="5.0" styleClass="VBox" BorderPane.alignment="CENTER">
+            <children>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="191.0">
+               <children>
+                      <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Controls">
+                     <font>
+                        <Font name="Helvetica Neue" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <CheckBox fx:id="eyeTrackingCheckbox" mnemonicParsing="false" text="Eye Tracking" textFill="WHITE">
+               <font>
+                  <Font name="Helvetica Neue" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="smileTrackingCheckbox" layoutX="20.0" layoutY="66.0" mnemonicParsing="false" text="Smile Tracking" textFill="WHITE">
+               <font>
+                  <Font name="Helvetica Neue" size="14.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="faceCount" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Faces Detected: ">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Helvetica Neue" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="eyeCount" fill="WHITE" layoutX="20.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eyes Detected: ">
+               <font>
+                  <Font name="Helvetica Neue" size="18.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                    <Button fx:id="start_button" mnemonicParsing="false" onAction="#startCamera" text="Start camera" />
+               </children>
+            </HBox>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </opaqueInsets>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+    </right>
+</BorderPane>

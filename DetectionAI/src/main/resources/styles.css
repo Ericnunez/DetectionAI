@@ -1,0 +1,12 @@
+.root{
+    -fx-background-color: #0a2540;
+    -fx-font-size: 15pt;
+        -fx-font-family: "Helvetica Neue";
+        -fx-text-fill: white;
+}
+.VBox{
+    -fx-background-color: #06182c;
+    -fx-background-radius: 20px;
+
+    -fx-border-radius: 20px;
+}
